@@ -1,18 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Questrial&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 @media screen and (min-width: 700px) {
+    /* dan */
     body {
         background-color: white;
         display: grid;
         font-family: "PT Sans", sans-serif;
+        margin: 0px;
+        height: 100vh;
+        width: 100vw;
     }
 
     section {
         display: grid;
-    }
-
-    img {
-        height: 30px;
+        padding: 2vw;
     }
 
     #categories_link {
@@ -21,32 +22,102 @@
         display: flex;
         align-items: center;
         gap: 0.5vw;
+        font-size: 0.8vw;
+        color: rgb(158, 158, 158);
+        margin-bottom: 25px;
+    }
+    
+    #categories_link a {
+        text-decoration-line: none;
+        color: rgb(92, 92, 92);
+    }
+
+    #categories_link a:hover {
+        text-decoration-line:underline;
+        color: rgb(158, 158, 158);
     }
 
     #page_shoping {
         display: grid;
         grid-template-columns: auto 0.7fr 1fr 0.5fr;
+        gap: 2vw;
     }
     
     #gallery {
-        height: 50px;
         display: flex;
         flex-direction: column;
         gap: 15px;
     }
 
     #gallery > div > img {
-        height: 50px;
-        width: 50px;
+        height: 40px;
+        width: 40px;
         object-fit: contain;
         justify-content: center;
         border-radius: 5px;
         border: 1px solid gray;
     }
-
-    #big_image > img {
-        height: 30vw;
+    
+    #big_image {
+        position: relative;
+        background-color: white;
+        width: auto;
+        height: 80vh;
     }
+    
+    #big_image > img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        z-index: 1;
+    }
+    
+    #big_image > div {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 2;
+    }
+    
+    #big_image > div > a > img {   
+        height: 30px;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: white;
+    }
+
+    #details {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    #rating {
+        width: 60px;
+        margin: -10px 0px;
+    }
+
+    #details > h2 {
+        margin: 0px;
+        font-weight: 300;
+    }
+
+    #details > h4 {
+        margin: 0px;
+        font-weight: 500;
+    }
+
+    #details .option_type {
+        display: flex;
+        border: 1px solid rgb(92, 92, 92);
+        padding: 10px;
+    }
+
+
+    /* dan */
 }
 
 @media screen and (max-width: 700px) {
