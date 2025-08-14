@@ -48,23 +48,28 @@
         height: 30vw;
     }
 
+    /* daniel */
     #top-header {
         display: flex;
         align-items: center;
         gap: 10px;
         padding: 10px;
         background-color: black;
+        font-size: 2px;
     }
 
     #top-header img {
         height: 40px;
         color: white;
+
     }
 
     #top-header p {
         margin: 0 10px;
         color: white;
+        font-size: 10px;
     }
+
 
     form {
         display: flex;
@@ -72,7 +77,6 @@
     }
 
     form select {
-
         padding: 5px;
         border: 1px solid #ccc;
         border-radius: 3px 0 0 3px;
@@ -99,18 +103,54 @@
         cursor: pointer;
     }
 
-    #language {
+    .language-select {
+        display: flex;
+        align-items: center;
+        gap: 3px;
+    }
+
+    .language-select .flag {
+        width: 30px;
+        height: auto;
+    }
+
+    .language-select select {
         background-color: black;
         color: white;
         border: none;
     }
 
+
     .account {
+        font-size: 15px;
         color: white;
     }
 
     .returns {
+        font-size: 15px;
         color: white;
+    }
+
+    #second-header nav {
+        display: flex;
+        height: 19px;
+        gap: 20px;
+        padding: 10px;
+        background-color: #232f3e;
+
+
+    }
+
+    nav a {
+        color: white;
+        text-decoration-line: none;
+        /* padding: 7px 2px 5px 2px; */
+
+    }
+
+    nav a:hover {
+        border: 1px solid white;
+
     }
 
 
@@ -164,7 +204,7 @@
     .bay-now-itzchak {
         background-color: orange;
         border-radius: 5px;
-        border-color:orange;
+        border-color: orange;
     }
 
 }
