@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Questrial&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+@media screen and (min-width: 700px) {
+    body {
+        background-color: white;
+        display: grid;
+        font-family: "PT Sans", sans-serif;
+    }
+
+    section {
+        display: grid;
+    }
+
+    img {
+        height: 30px;
+    }
+
+    #categories_link {
+        display: grid;
+        grid-template-columns: 1fr;
+        display: flex;
+        align-items: center;
+        gap: 0.5vw;
+    }
+
+    #page_shoping {
+        display: grid;
+        grid-template-columns: 0.2fr 1fr 1fr 0.5fr;
+    }
+
+    #gallery {
+        display: grid;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    
+}
