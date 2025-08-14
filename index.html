@@ -3,30 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amazone</title>
+    <title>Amazon Clone</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div id="top-header">
-            <img src="/photos/amazon-logo.png" alt="amzone-logo">
-            <img src="/photos/location.png" alt="location-photo">
-            <p>Deliver to Israel</p>
-            <form action="search">
-                <label for="search">
-                    <select name="All" id="All">
-                        <option value="All">All</option>
-                        <option value="All Depatments">All Departments</option>
-                        <option value="Baby">Baby</option>
-                        <option value="Phones">Phones</option>
-                        <option value="computers">Computers</option>
-                    </select>
-                     <input type="text" placeholder="search enything...">
-                     <button>🔍</button>
+<header>
+    <div id="top-header">
 
-                </label>
-            </form>
+        <!-- logo -->
+        <a href="#" class="logo">
+            <img src="/photos/amazon-logo.png" alt="Amazon logo">
+        </a>
+
+        <!-- location -->
+        <div class="location">
+            <img src="/photos/location.png" alt="Location icon">
+            <p>Deliver to <br><strong>Israel</strong></p>
         </div>
-    </header>
+
+        <!-- search -->
+        <form class="search-bar">
+            <select name="All">
+                <option value="All">All</option>
+                <option value="All Departments">All Departments</option>
+                <option value="Baby">Baby</option>
+                <option value="Phones">Phones</option>
+                <option value="Computers">Computers</option>
+            </select>
+            <input type="text" placeholder="Search anything...">
+            <button type="submit">🔍</button>
+        </form>
+
+        <!-- language -->
+        <select name="language" id="language">
+            <option value="EN">EN</option>
+            <option value="ES">ES</option>
+            <option value="HE">HE</option>
+        </select>
+
+        <!-- user -->
+        <div class="account">
+            <span>Hello, sign in</span><br>
+            <strong>Account & Lists</strong>
+        </div>
+
+        <!-- returns -->
+        <div class="returns">
+            <span>Returns</span><br>
+            <strong>& Orders</strong>
+        </div>
+
+        <!-- cart -->
+        <a href="#" class="cart">
+            <img src="/photos/cart.png" alt="Shopping cart">
+        </a>
+
+    </div>
+</header>
 </body>
 </html>

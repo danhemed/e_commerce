@@ -22,12 +22,15 @@ form {
 }
 
 form select {
+    
     padding: 5px;
     border: 1px solid #ccc;
     border-radius: 3px 0 0 3px;
     background-color: #e4dddd;
     color: #605c5c;
 }
+
+
 
 form input {
     flex: 1;
@@ -45,3 +48,18 @@ form button {
     background-color: orange;
     cursor: pointer;
 }
+
+#language {
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.account {
+    color: white;
+}
+
+.returns {
+    color: white;
+}
+
