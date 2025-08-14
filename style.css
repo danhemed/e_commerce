@@ -12,11 +12,14 @@
     color: white; 
 
 }
+
+
 #top-header p {
-    margin: 0 10px;
-    color: white;
+    margin: 10px 10px;
+    color:white;
     font-size: 10px;
 }
+
 
 
 form {
